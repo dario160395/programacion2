@@ -1,0 +1,66 @@
+
+// promedio.cpp : Defines the entry point for the console application.
+//autor:dario farah
+
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	float p1,p2,p3,practica,final,nf;
+	
+	do
+	{
+		cout<<"\nintroduzca p1";
+		cin>>p1;
+	}
+	while ((p1>100||p1>0)&&(p1!=-99));
+	
+	while(p1!=-99)
+	{
+
+    do 
+	{
+        cout<<"\nintroduzca p2";
+		cin>>p2;
+	}
+     while(p2>100 ||p2>0);
+	 
+     do
+	 { 
+       cout<<"\nintroduzca p3";
+	   cin>>p3;
+	 } 
+	 while(p3>100||p3>0);
+    
+	do
+	{
+		cout<<"\nintroduzca practica";
+		cin>>practica;
+	}
+	while(practica<100||practica<0);
+    
+	do
+	{
+		cout<<"\nintroduzca parcial final";
+		cin>>final;
+	}
+	while(final>100||final>0);
+	
+	nf = ((p1+p2+p3)/3)*0.4+practica*0.2+final*0.4;
+    cout<<"Nota final="<<nf;
+
+	
+    do
+	{
+		cout<<"\nintroduzca p1";
+		cin>>p1;
+	}
+	while ((p1>100 || p1>0)&&(p1!=-99));
+	}
+	getch();
+}
