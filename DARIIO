@@ -1,0 +1,50 @@
+// dariio.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+
+void main(){
+
+  float cuadrado,circulo,triangulo;
+
+   do	
+   {
+
+
+
+	   
+	cout << "1.- cuadrado" << endl;
+    cout << "2.- circulo" << endl;
+    cout << "3.- triangulo" << endl;
+    cout << "0.- Salir" << endl;
+    cout << "Elige una opción: " << endl;
+	cin >> opcion;
+   
+switch (opcion) {
+    case 1:cout<<"ingresar cuadrado";
+		cin>>"l";
+		A= L * L;
+        break;
+    case 2:cout<<"ingresar circulo";
+		cin>>"Pi,R";
+		A= Pi*R*R;
+        break;
+    case 3:cout<<"ingresar triangulo"; 
+		cin>>"B,H,2";
+		A = (B*H)/2;
+        break;
+    case 0: cout<<"Salir";
+        break;
+    default: cout << "Opcion invalida" << endl;
+ }
+ cout<< "El resultado es " << r << endl;
+ cin>>"resultado"
+ 
+ getch( );
+   }
+
+while (opcion!=0);
+}
